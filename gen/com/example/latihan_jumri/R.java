@@ -24,18 +24,24 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080018;
-        public static final int btadd=0x7f080013;
+        public static final int action_settings=0x7f080021;
+        public static final int btadd=0x7f080014;
+        public static final int btsend=0x7f080016;
         public static final int btsimpan=0x7f080005;
-        public static final int email=0x7f080016;
+        public static final int content=0x7f08001f;
+        public static final int created_at=0x7f080020;
+        public static final int email=0x7f08001c;
         public static final int etaddress=0x7f080001;
         public static final int etdob=0x7f080004;
         public static final int etemail=0x7f080002;
         public static final int etname=0x7f080000;
         public static final int etphone=0x7f080003;
-        public static final int list=0x7f080014;
-        public static final int name=0x7f080015;
-        public static final int phone=0x7f080017;
+        public static final int fragment_container=0x7f080013;
+        public static final int list=0x7f080015;
+        public static final int messagelist=0x7f080019;
+        public static final int name=0x7f08001b;
+        public static final int phone=0x7f08001d;
+        public static final int recipient=0x7f08001e;
         public static final int tvaddressl=0x7f080007;
         public static final int tvaddressv=0x7f080008;
         public static final int tvcreatedl=0x7f08000f;
@@ -44,17 +50,24 @@ public final class R {
         public static final int tvdobv=0x7f08000e;
         public static final int tvemaill=0x7f080009;
         public static final int tvemailv=0x7f08000a;
+        public static final int tvinbox=0x7f080018;
         public static final int tvname=0x7f080006;
+        public static final int tvoutbox=0x7f08001a;
         public static final int tvphonel=0x7f08000b;
         public static final int tvphonev=0x7f08000c;
+        public static final int tvtext=0x7f080017;
         public static final int tvupdatedl=0x7f080011;
         public static final int tvupdatedv=0x7f080012;
     }
     public static final class layout {
         public static final int activity_contact_add=0x7f030000;
         public static final int activity_contact_details=0x7f030001;
-        public static final int activity_main=0x7f030002;
-        public static final int list_item=0x7f030003;
+        public static final int activity_contact_messages=0x7f030002;
+        public static final int activity_main=0x7f030003;
+        public static final int fragment_tab_inbox=0x7f030004;
+        public static final int fragment_tab_outbox=0x7f030005;
+        public static final int list_item=0x7f030006;
+        public static final int list_messages=0x7f030007;
     }
     public static final class menu {
         public static final int main=0x7f070000;
@@ -65,6 +78,7 @@ public final class R {
         public static final int hello_world=0x7f050002;
         public static final int title_activity_contact_add=0x7f050004;
         public static final int title_activity_contact_details=0x7f050003;
+        public static final int title_activity_contact_messages=0x7f050005;
     }
     public static final class style {
         /** 

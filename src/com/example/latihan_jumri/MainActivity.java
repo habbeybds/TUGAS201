@@ -43,7 +43,7 @@ public class MainActivity extends Activity {
         lv = (ListView) findViewById(R.id.list);
         badd = (Button) findViewById(R.id.btadd);
  
-        new GetContacts().execute();
+ 
         
         lv.setOnItemClickListener(new OnItemClickListener() {
 			
@@ -51,8 +51,9 @@ public class MainActivity extends Activity {
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				// TODO Auto-generated method stub
 				HashMap<String, String> hm = contactList.get(position);
-				Intent intent = new Intent(MainActivity.this, ContactDetails.class);
+				Intent intent = new Intent(MainActivity.this, ContactMessages.class);
 				intent.putExtra("id", hm.get("id"));
+				intent.putExtra("name", hm.get("name"));
 				startActivity(intent);
 			}
 		});
@@ -67,18 +68,18 @@ public class MainActivity extends Activity {
 			}
 		});
     }
-    /*
-    private AdapterView.OnItemClickListener listClick = new AdapterView.OnItemClickListener() {
-		
-		@Override
-		public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-			// TODO Auto-generated method stub
-			HashMap<String, String> hm = contactList.get(position);
-			Intent intent = new Intent(MainActivity.this, ContactDetails.class);
-			intent.putExtra("id", hm.get(id));
-			startActivity(intent);
-		}
-	}; */
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
     private class GetContacts extends AsyncTask<Void, Void, Void> {
     	 
@@ -183,4 +184,11 @@ public class MainActivity extends Activity {
             lv.setAdapter(adapter);
         }
     }
+    
+    @Override
+    public void onResume() {
+    	super.onResume();
+    	new GetContacts().execute();
+    }
 }
+

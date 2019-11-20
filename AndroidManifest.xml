@@ -40,6 +40,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.latihan_jumri.MainActivity" />
         </activity>
+        <activity
+            android:name=".ContactMessages"
+            android:label="@string/title_activity_contact_messages"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.latihan_jumri.MainActivity" />
+
+        </activity>
     </application>
 
 </manifest>
